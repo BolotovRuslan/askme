@@ -36,6 +36,16 @@ module Askme
     config.generators.system_tests = nil
 
     I18n.available_locales = %i[en ru]
-    I18n.default_locale = :ru    
+    I18n.default_locale = :ru  
+
+    config.generators do |g|
+      g.test_framework  nil #to skip test framework
+    end
+    config.time_zone = 'Moscow'
+
+    config.i18n.default_locale = :en
+    config.i18n.locale = :ru
+
+    config.i18n.fallbacks = [:en]  
   end
 end
