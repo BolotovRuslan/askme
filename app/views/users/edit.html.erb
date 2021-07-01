@@ -42,7 +42,7 @@
         <%= f.label 'Цвет профиля', class: 'form-label' %>
         <%= f.color_field :profile_color %>
       </div>
-      
+
       <div class="buffer-top-large buffer-bottom">
         Если не хотите менять пароль — оставьте эти поля пустыми!
       </div>
@@ -55,6 +55,10 @@
       <div class="form-field">
         <%= f.label :password_confirmation, class: 'form-label' %>
         <%= f.password_field :password_confirmation, class: 'form-text-field' %>
+      </div>
+      
+      <div class="form-action buffer-top">
+        <%= link_to 'Удалить аккаунт', @user, method: :delete %>
       </div>
 
       <div class="form-action buffer-top">

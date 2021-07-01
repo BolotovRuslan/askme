@@ -49,6 +49,12 @@ class UsersController < ApplicationController
     @unanswered_count = @questions_count - @answers_count
   end
 
+  def destroy
+    @user.destroy
+    session[:user_id] = nil
+    redirect_to root_path
+  end
+  
   private
 
   def authorize_user
