@@ -23,7 +23,8 @@
   color: #005a55;
 }
 
-.question-answer {
+.question-author {
+  font-size: 16px;
 }
 
 .question-date {
