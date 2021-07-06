@@ -12,6 +12,7 @@
 
     <div class="question-author">
       <% questioner = question.author %>
+      
       <% if questioner %>
         <%= link_to questioner.username, user_path(questioner) %>
       <%else%>
