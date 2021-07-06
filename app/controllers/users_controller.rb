@@ -48,9 +48,9 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @user = User.find(params[:id])
     @user.destroy
-    session[:user_id] = nil
-    redirect_to root_path
+    redirect_to root_path, notice: "Вы успешно удалили свой аккаунт"
   end
   
   private

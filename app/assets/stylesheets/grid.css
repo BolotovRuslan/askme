@@ -62,6 +62,11 @@
   width: 33.33%;
 }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 960px) {
   .column-3-4,
   .column-1-4,
