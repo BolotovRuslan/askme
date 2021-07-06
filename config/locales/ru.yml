@@ -1,0 +1,17 @@
+ru:
+  activerecord:
+    models:
+      user:
+      question:
+    attributes:
+      user:
+        avatar_url: 'URL вашей аватарки'
+        email: 'Логин (email)'
+        name: 'Ваше имя'
+        password: 'Пароль'
+        password_confirmation: 'Подтвеждение пароля'
+        profile_color: 'Цвет вашего профиля'
+        username: 'Никнейм'
+      question:      
+        answer: 'Ответ'
+        text: 'Вопрос'
