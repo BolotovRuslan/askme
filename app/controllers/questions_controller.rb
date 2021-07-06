@@ -11,6 +11,8 @@ class QuestionsController < ApplicationController
 
     @question.author = current_user
 
+    @questioner = question.author
+
     if @question.save
       redirect_to user_path(@question.user), notice: 'Вопрос задан'
     else        
