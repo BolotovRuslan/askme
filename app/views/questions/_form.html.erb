@@ -25,6 +25,9 @@
         <%= f.text_area :answer, class: 'form-textarea' %>
       </div>
     <% end %>
+    
+    <%# Хелпер капчи %>
+    <%= recaptcha_tags unless current_user.present? %>
 
     <div class="form-action buffer-both">
       <%= f.submit 'Сохранить', class: 'button button-dark button-small' %>
