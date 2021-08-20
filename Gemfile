@@ -14,7 +14,6 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'rails-i18n'
 gem 'jquery-rails'
-gem 'recaptcha', require: 'recaptcha/rails'
 gem 'dotenv-rails'
 
 gem 'bootsnap', '>= 1.4.4', require: false
